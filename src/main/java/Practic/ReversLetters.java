@@ -3,6 +3,12 @@ package Practic;
 public class ReversLetters {
 
     public static String reversLetters(String s) {
+
+        //Добавил null в метод
+        if (s == null) {
+            return "";
+        }
+
         char[] chars = s.toCharArray();
         int left = 0;
         int right = chars.length - 1;
